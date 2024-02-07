@@ -1,0 +1,802 @@
+# Russian translations for TellerBot.
+# Copyright (C) 2019 Fincubator
+# This file is distributed under the same license as the TellerBot project.
+# alfred richardsn <rchrdsn@protonmail.ch>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version:  TellerBot\n"
+"Report-Msgid-Bugs-To: rchrdsn@protonmail.ch\n"
+"POT-Creation-Date: 2020-08-25 07:27+0300\n"
+"PO-Revision-Date: 2020-06-17 12:41+0000\n"
+"Last-Translator: alfred richardsn <rchrdsn@protonmail.ch>\n"
+"Language: ru\n"
+"Language-Team: Russian "
+"<https://hosted.weblate.org/projects/tellerbot/tellerbot/ru/>\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: src/escrow/blockchain/__init__.py
+msgid "check_timeout {hours}"
+msgstr "Проверка транзакции длилась дольше {hours} часов, поэтому эскроу отменено."
+
+#: src/escrow/blockchain/__init__.py
+msgid "transaction_passed {currency}"
+msgstr "Транзакция прошла. Я оповещу когда вы должны будете получить {currency}."
+
+#: src/escrow/blockchain/__init__.py src/handlers/escrow.py
+msgid "sent"
+msgstr "Отправлено"
+
+#: src/escrow/blockchain/__init__.py
+msgid "transaction_confirmed"
+msgstr "Транзакция подтверждена."
+
+#: src/escrow/blockchain/__init__.py src/handlers/escrow.py
+msgid "send {amount} {currency} {address}"
+msgstr "Отправьте {amount} {currency} на адрес {address}"
+
+#: src/escrow/blockchain/__init__.py
+msgid "transaction_not_confirmed"
+msgstr "Транзакция не подтверждена."
+
+#: src/escrow/blockchain/__init__.py
+msgid "try_again"
+msgstr "Пожалуйста, попробуйте ещё раз."
+
+#: src/escrow/blockchain/__init__.py
+msgid "transfer_mistakes"
+msgstr "В вашем переводе есть ошибки:"
+
+#: src/escrow/blockchain/__init__.py
+msgid "wrong_asset"
+msgstr "неверный актив"
+
+#: src/escrow/blockchain/__init__.py
+msgid "wrong_amount"
+msgstr "неверная сумма"
+
+#: src/escrow/blockchain/__init__.py
+msgid "wrong_memo"
+msgstr "неверное мемо"
+
+#: src/escrow/blockchain/__init__.py
+msgid "refund_promise"
+msgstr "Транзакция будет возмещена после подтверждения."
+
+#: src/escrow/blockchain/__init__.py
+msgid "transaction_refunded"
+msgstr "Транзакция возмещена."
+
+#: src/handlers/__init__.py
+msgid "unknown_command"
+msgstr "Неизвестная команда."
+
+#: src/handlers/__init__.py
+msgid "unknown_button"
+msgstr "Неизвестная кнопка."
+
+#: src/handlers/__init__.py
+msgid "unexpected_error"
+msgstr ""
+"Возникла неожиданная ошибка во время обработки вашего обращения. Мы уже "
+"оповещены и исправим её как можно скорее!"
+
+#: src/handlers/base.py
+msgid "create_order"
+msgstr "Создать заказ"
+
+#: src/handlers/base.py
+msgid "my_orders"
+msgstr "Мои заказы"
+
+#: src/handlers/base.py
+msgid "order_book"
+msgstr "Список заказов"
+
+#: src/handlers/base.py
+msgid "referral_link"
+msgstr "Реферальная ссылка"
+
+#: src/handlers/base.py
+msgid "claim_cashback"
+msgstr "Запросить кэшбэк"
+
+#: src/handlers/base.py
+msgid "language"
+msgstr "Язык"
+
+#: src/handlers/base.py
+msgid "support"
+msgstr "Поддержка"
+
+#: src/handlers/base.py src/whitelist.py
+msgid "back"
+msgstr "Назад"
+
+#: src/handlers/base.py
+msgid "skip"
+msgstr "Пропустить"
+
+#: src/handlers/base.py src/handlers/creation.py src/handlers/escrow.py
+#: src/handlers/order.py src/handlers/start_menu.py src/whitelist.py
+msgid "cancel"
+msgstr "Отменить"
+
+#: src/handlers/base.py
+msgid "no_orders"
+msgstr "Нет заказов."
+
+#: src/handlers/base.py src/handlers/creation.py
+msgid "invert"
+msgstr "Инвертировать"
+
+#: src/handlers/base.py
+msgid "page {number} {total}"
+msgstr "Страница {number} из {total}"
+
+#: src/handlers/base.py src/handlers/order.py
+msgid "new_price {of_currency} {per_currency}"
+msgstr "Отправьте новую цену в {of_currency}/{per_currency}."
+
+#: src/handlers/base.py
+msgid "archived"
+msgstr "Архивировано"
+
+#: src/handlers/base.py
+msgid "sells {sell_currency} {buy_currency}"
+msgstr "продаёт {sell_currency} за {buy_currency}"
+
+#: src/handlers/base.py
+msgid "buys {buy_currency} {sell_currency}"
+msgstr "покупает {buy_currency} за {sell_currency}"
+
+#: src/handlers/base.py
+msgid "buy_amount"
+msgstr "Сумма покупки:"
+
+#: src/handlers/base.py
+msgid "sell_amount"
+msgstr "Сумма продажи:"
+
+#: src/handlers/base.py
+msgid "price"
+msgstr "Цена:"
+
+#: src/handlers/base.py
+msgid "payment_system"
+msgstr "Система оплаты:"
+
+#: src/handlers/base.py
+msgid "duration"
+msgstr "Продолжительность:"
+
+#: src/handlers/base.py
+msgid "comments"
+msgstr "Комментарии:"
+
+#: src/handlers/base.py
+msgid "finish"
+msgstr "Завершить"
+
+#: src/handlers/base.py
+msgid "similar"
+msgstr "Похожие"
+
+#: src/handlers/base.py
+msgid "match"
+msgstr "Подобрать"
+
+#: src/handlers/base.py
+msgid "edit"
+msgstr "Редактировать"
+
+#: src/handlers/base.py
+msgid "delete"
+msgstr "Удалить"
+
+#: src/handlers/base.py
+msgid "unarchive"
+msgstr "Разархивировать"
+
+#: src/handlers/base.py
+msgid "archive"
+msgstr "Архивировать"
+
+#: src/handlers/base.py
+msgid "change_duration"
+msgstr "Продлить"
+
+#: src/handlers/base.py
+msgid "escrow"
+msgstr "Эскроу"
+
+#: src/handlers/base.py src/handlers/order.py
+msgid "hide"
+msgstr "Скрыть"
+
+#: src/handlers/base.py src/handlers/order.py
+msgid "unset"
+msgstr "Сбросить"
+
+#: src/handlers/cashback.py
+msgid "confirm_cashback_address"
+msgstr "Да"
+
+#: src/handlers/cashback.py
+msgid "custom_cashback_address"
+msgstr "Нет, использовать другой адрес"
+
+#: src/handlers/cashback.py
+msgid "use_cashback_address {address}"
+msgstr "Отправить кэшбэк на адрес {address}?"
+
+#: src/handlers/cashback.py
+msgid "send_cashback_address"
+msgstr "Отправьте адрес, на который будет отправлен кэшбэк."
+
+#: src/handlers/cashback.py
+msgid "claim_transfer_wait"
+msgstr "Отправляю кэшбэк..."
+
+#: src/handlers/cashback.py
+msgid "cashback_transfer_error"
+msgstr ""
+"Не удалось отправить кэшбэк. Убедитесь, что запрашиваемая сумма кэшбэка "
+"доступна для отправки."
+
+#: src/handlers/cashback.py
+msgid "cashback_transferred"
+msgstr "Кэшбэк отправлен!"
+
+#: src/handlers/creation.py
+msgid "wrong_button"
+msgstr "Вы используете неправильную кнопку."
+
+#: src/handlers/creation.py
+msgid "back_error"
+msgstr "Не удалось пойти назад."
+
+#: src/handlers/creation.py
+msgid "skip_error"
+msgstr "Не удалось пропустить."
+
+#: src/handlers/creation.py
+msgid "no_creation"
+msgstr "Вы не создаёте заказ."
+
+#: src/handlers/creation.py
+msgid "order_cancelled"
+msgstr "Заказ отменён."
+
+#: src/handlers/creation.py src/handlers/escrow.py src/handlers/order.py
+msgid "exceeded_character_limit {limit} {sent}"
+msgstr ""
+"Это значение должно содержать меньше {limit} символов (вы отправили "
+"{sent})."
+
+#: src/handlers/creation.py
+msgid "non_latin_characters_gateway"
+msgstr "Шлюз может содержать только латинские символы."
+
+#: src/handlers/creation.py
+msgid "request_whitelisting"
+msgstr "Запросить занесение в белый список"
+
+#: src/handlers/creation.py
+msgid "gateway_not_whitelisted {currency}"
+msgstr "Этот шлюз {currency} не занесён в белый список."
+
+#: src/handlers/creation.py
+msgid "non_latin_characters_currency"
+msgstr "Валюта может содержать только латинские символы."
+
+#: src/handlers/creation.py
+msgid "no_fiat_gateway"
+msgstr "Шлюз не может быть указан для фиатных валют."
+
+#: src/handlers/creation.py
+msgid "choose_gateway {currency}"
+msgstr "Выберите шлюз {currency}."
+
+#: src/handlers/creation.py
+msgid "currency_not_whitelisted"
+msgstr "Эта валюта не занесена в белый список."
+
+#: src/handlers/creation.py
+msgid "double_request"
+msgstr "Вы уже отправляли запрос для этой валюты."
+
+#: src/handlers/creation.py
+msgid "request_sent"
+msgstr "Запрос отправлен."
+
+#: src/handlers/creation.py
+msgid "ask_sell_currency"
+msgstr "Какую валюту вы хотите продать?"
+
+#: src/handlers/creation.py src/handlers/start_menu.py
+msgid "ask_buy_currency"
+msgstr "Какую валюту вы хотите купить?"
+
+#: src/handlers/creation.py
+msgid "ask_buy_price {of_currency} {per_currency}"
+msgstr "По какой цене (в {of_currency}/{per_currency}) вы хотите купить?"
+
+#: src/handlers/creation.py
+msgid "same_currency_error"
+msgstr "Валюты должны отличаться."
+
+#: src/handlers/creation.py
+msgid "same_gateway_error"
+msgstr "Шлюзы должны отличаться."
+
+#: src/handlers/creation.py
+msgid "ask_sell_price {of_currency} {per_currency}"
+msgstr "По какой цене (в {of_currency}/{per_currency}) вы хотите продать?"
+
+#: src/handlers/creation.py
+msgid "ask_sum_currency"
+msgstr "Выберите валюту суммы заказа."
+
+#: src/handlers/creation.py
+msgid "ask_order_sum {currency}"
+msgstr "Отправьте сумму заказа в {currency}."
+
+#: src/handlers/creation.py
+msgid "choose_sum_currency_with_buttons"
+msgstr "Выберите валюту суммы кнопками."
+
+#: src/handlers/creation.py
+msgid "ask_location"
+msgstr "Отправьте локацию предпочитаемого места встречи для наличной оплаты."
+
+#: src/handlers/creation.py
+msgid "cashless_payment_system"
+msgstr "Отправьте систему безналичной оплаты."
+
+#: src/handlers/creation.py
+msgid "location_not_found"
+msgstr "Локация не найдена."
+
+#: src/handlers/creation.py
+msgid "ask_duration {limit}"
+msgstr "Отправьте продолжительность заказа до {limit} дней."
+
+#: src/handlers/creation.py
+msgid "choose_location"
+msgstr "Выберите одну из этих локаций:"
+
+#: src/handlers/creation.py src/handlers/order.py
+msgid "send_natural_number"
+msgstr "Отправьте натуральное число."
+
+#: src/handlers/creation.py src/handlers/order.py
+msgid "exceeded_duration_limit {limit}"
+msgstr "Отправьте число меньшее, чем {limit}."
+
+#: src/handlers/creation.py
+msgid "ask_comments"
+msgstr "Добавьте какие-либо дополнительные комментарии."
+
+#: src/handlers/creation.py
+msgid "order_set"
+msgstr "Заказ установлен."
+
+#: src/handlers/escrow.py
+msgid "send_at_least_8_digits"
+msgstr "Вы должны отправить хотя бы 8 цифр."
+
+#: src/handlers/escrow.py
+msgid "digits_parsing_error"
+msgstr "Не удалось получить цифры из сообщения."
+
+#: src/handlers/escrow.py
+msgid "offer_not_active"
+msgstr "Предложение неактивно."
+
+#: src/handlers/escrow.py
+msgid "exceeded_order_sum"
+msgstr "Отправьте число, не превышающее сумму заявки."
+
+#: src/handlers/escrow.py
+msgid "continue"
+msgstr "Продолжить"
+
+#: src/handlers/escrow.py
+msgid "exceeded_insurance {amount} {currency}"
+msgstr ""
+"Сумма актива для эскроу превышает максимальное количество, которое можно "
+"застраховать. Если вы продолжите, только {amount} {currency} будут "
+"защищены и возмещены в случае неожиданных событий во время обмена."
+
+#: src/handlers/escrow.py
+msgid "exceeded_insurance_options"
+msgstr ""
+"Вы можете отправить меньшее число, продолжить с частичным страхованием "
+"или отменить предложение."
+
+#: src/handlers/escrow.py
+msgid "ask_fee {fee_percents}"
+msgstr "Вы согласны заплатить комиссию {fee_percents}%?"
+
+#: src/handlers/escrow.py
+msgid "will_pay {amount} {currency}"
+msgstr "(Вы заплатите {amount} {currency})"
+
+#: src/handlers/escrow.py
+msgid "will_get {amount} {currency}"
+msgstr "(Вы получите {amount} {currency})"
+
+#: src/handlers/escrow.py
+msgid "yes"
+msgstr "Да"
+
+#: src/handlers/escrow.py src/handlers/order.py
+msgid "no"
+msgstr "Нет"
+
+#: src/handlers/escrow.py
+msgid "escrow_cancelled"
+msgstr "Эскроу отменено."
+
+#: src/handlers/escrow.py
+msgid "choose_bank"
+msgstr "Выберите банк."
+
+#: src/handlers/escrow.py
+msgid "request_full_card_number {currency} {user}"
+msgstr "Отправьте {user} полный номер вашей карты {currency}."
+
+#: src/handlers/escrow.py
+msgid "asked_full_card_number {user}"
+msgstr "Я попросил {user} отправить вам полный номер карты."
+
+#: src/handlers/escrow.py
+msgid "ask_address {currency}"
+msgstr "Отправьте ваш адрес {currency}."
+
+#: src/handlers/escrow.py
+msgid "bank_not_supported"
+msgstr "Этот банк не поддерживается."
+
+#: src/handlers/escrow.py
+msgid "send_first_and_last_4_digits_of_card_number {currency}"
+msgstr "Отправьте первые и последние 4 цифры номера вашей карты {currency}."
+
+#: src/handlers/escrow.py
+msgid "wrong_full_card_number_receiver {user}"
+msgstr "Вы должны отправить это {user}, а не мне!"
+
+#: src/handlers/escrow.py
+msgid "exchange_continued {user}"
+msgstr "Я продолжил обмен с {user}."
+
+#: src/handlers/escrow.py
+msgid "send_name_patronymic_surname"
+msgstr ""
+"Отправьте ваше имя, отчество и первую букву фамилии, разделённые "
+"пробелами."
+
+#: src/handlers/escrow.py
+msgid "wrong_word_count {word_count}"
+msgstr "Вы должны отправить {word_count} слов, разделённых пробелами."
+
+#: src/handlers/escrow.py
+msgid "show_order"
+msgstr "Показать заказ"
+
+#: src/handlers/escrow.py
+msgid "accept"
+msgstr "Принять"
+
+#: src/handlers/escrow.py
+msgid "decline"
+msgstr "Отклонить"
+
+#: src/handlers/escrow.py
+msgid ""
+"escrow_offer_notification {user} {sell_amount} {sell_currency} for "
+"{buy_amount} {buy_currency}"
+msgstr ""
+"Вы получили предложение эскроу от {user} на продажу {sell_amount} "
+"{sell_currency} за {buy_amount} {buy_currency}"
+
+#: src/handlers/escrow.py
+msgid "using {bank}"
+msgstr "используя {bank}"
+
+#: src/handlers/escrow.py
+msgid "offer_sent"
+msgstr "Предложение отправлено."
+
+#: src/handlers/escrow.py
+msgid "escrow_offer_declined"
+msgstr "Ваше предложение эскроу отклонено."
+
+#: src/handlers/escrow.py
+msgid "offer_declined"
+msgstr "Предложение отклонено."
+
+#: src/handlers/escrow.py
+msgid "transaction_check_starting"
+msgstr "Начинаю проверку транзакции…"
+
+#: src/handlers/escrow.py
+msgid "transaction_not_found"
+msgstr "Транзакция не найдена."
+
+#: src/handlers/escrow.py
+msgid "check"
+msgstr "Проверить транзакцию"
+
+#: src/handlers/escrow.py
+msgid "with_memo"
+msgstr "с мемо"
+
+#: src/handlers/escrow.py
+msgid "transfer_information_sent"
+msgstr "Информация для перевода отправлена."
+
+#: src/handlers/escrow.py
+msgid "transaction_completion_notification_promise"
+msgstr "Я оповещу вас когда транзакция будет совершена."
+
+#: src/handlers/escrow.py
+msgid "cancel_after_transfer"
+msgstr "Вы не можете отменить предложение после перевода на эскроу."
+
+#: src/handlers/escrow.py
+msgid "cancel_before_verification"
+msgstr ""
+"Вы не можете отменить это предложение пока транзакция не будет "
+"подтверждена."
+
+#: src/handlers/escrow.py
+msgid "transfer_already_confirmed"
+msgstr "Вы уже подтвердили этот перевод."
+
+#: src/handlers/escrow.py
+msgid "receiving_confirmation {currency} {user}"
+msgstr "Вы получили {currency} от {user}?"
+
+#: src/handlers/escrow.py
+msgid "complete_escrow_promise"
+msgstr "Когда ваш перевод подтвердится, я завершу эскроу."
+
+#: src/handlers/escrow.py
+msgid "escrow_completing"
+msgstr "Эскроу завершается, один момент."
+
+#: src/handlers/escrow.py
+msgid "escrow_completed"
+msgstr "Эскроу завершено!"
+
+#: src/handlers/escrow.py
+msgid "escrow_sent {amount} {currency}"
+msgstr "Я отправил вам {amount} {currency}."
+
+#: src/handlers/escrow.py
+msgid "request_validation_promise"
+msgstr "Мы вручную проверим ваше обращение и определимся с возвратом."
+
+#: src/handlers/order.py
+msgid "order_not_found"
+msgstr "Заказ не найден."
+
+#: src/handlers/order.py
+msgid "no_more_orders"
+msgstr "Больше нет заказов."
+
+#: src/handlers/order.py
+msgid "no_previous_orders"
+msgstr "Нет предыдущих заказов."
+
+#: src/handlers/order.py
+msgid "escrow_unavailable"
+msgstr "Эскроу временно недоступен. Извините за неудобства."
+
+#: src/handlers/order.py
+msgid "escrow_starting_error"
+msgstr "Не удалось начать эскроу."
+
+#: src/handlers/order.py
+msgid "change_to {currency}"
+msgstr "Поменять на {currency}"
+
+#: src/handlers/order.py
+msgid "send_exchange_sum {currency}"
+msgstr "Отправьте сумму обмена в {currency}."
+
+#: src/handlers/order.py
+msgid "edit_order_error"
+msgstr "Не удалось отредактировать заказ."
+
+#: src/handlers/order.py
+msgid "send_new_buy_amount"
+msgstr "Отправьте новую сумму покупки."
+
+#: src/handlers/order.py
+msgid "send_new_sell_amount"
+msgstr "Отправьте новую сумму продажи."
+
+#: src/handlers/order.py
+msgid "send_new_payment_system"
+msgstr "Отправьте новую систему оплаты."
+
+#: src/handlers/order.py
+msgid "send_new_duration {limit}"
+msgstr "Отправьте новую продолжительность до {limit} дней."
+
+#: src/handlers/order.py
+msgid "repeat_duration_singular {days}"
+msgid_plural "repeat_duration_plural {days}"
+msgstr[0] "Повторить {days} день"
+msgstr[1] "Повторить {days} дня"
+msgstr[2] "Повторить {days} дней"
+
+#: src/handlers/order.py
+msgid "send_new_comments"
+msgstr "Отправьте новые комментарии."
+
+#: src/handlers/order.py
+msgid "unarchive_order_error"
+msgstr "Не удалось разархивировать заказ."
+
+#: src/handlers/order.py
+msgid "archive_order_error"
+msgstr "Не удалось архивировать заказ."
+
+#: src/handlers/order.py
+msgid "totally_sure"
+msgstr "Да, я полностью уверен(а)"
+
+#: src/handlers/order.py
+msgid "delete_order_confirmation"
+msgstr "Вы уверены, что хотите удалить этот заказ?"
+
+#: src/handlers/order.py
+msgid "delete_order_error"
+msgstr "Не удалось удалить заказ."
+
+#: src/handlers/order.py
+msgid "order_deleted"
+msgstr "Заказ удалён."
+
+#: src/handlers/order.py
+msgid "hide_order_error"
+msgstr "Не удалось скрыть заказ."
+
+#: src/handlers/start_menu.py
+msgid "choose_language"
+msgstr "Пожалуйста, выберите свой язык."
+
+#: src/handlers/start_menu.py
+msgid "help_message"
+msgstr ""
+"Здравствуйте, я TellerBot. Я могу помочь вам встретить людей, с которыми "
+"вы можете обмениваться деньгами.\n"
+"\n"
+"Выберите один из вариантов на вашей клавиатуре."
+
+#: src/handlers/start_menu.py
+msgid "exceeded_order_creation_time_limit {orders} {hours}"
+msgstr "Вы не можете создать больше чем {orders} заказов за {hours} часа."
+
+#: src/handlers/start_menu.py
+msgid "referral_share {link}"
+msgstr "Ваша реферальная ссылка с кодом: {link}"
+
+#: src/handlers/start_menu.py
+msgid "referral_share_alias {link}"
+msgstr "Ваша реферальная ссылка с именем пользователя: {link}"
+
+#: src/handlers/start_menu.py
+msgid "choose_your_language"
+msgstr "Выберите свой язык."
+
+#: src/handlers/start_menu.py
+msgid "request_question"
+msgstr "Какой у вас вопрос?"
+
+#: src/handlers/start_menu.py
+msgid "claim {amount} {currency}"
+msgstr "Запросить {amount} {currency}"
+
+#: src/handlers/start_menu.py
+msgid "no_cashback"
+msgstr ""
+"У вас нет доступного для запроса кэшбэка. Используйте эскроу для его "
+"получения."
+
+#: src/handlers/start_menu.py
+msgid "choose_cashback_currency"
+msgstr "Выберите валюту кэшбэка."
+
+#: src/handlers/start_menu.py
+msgid "user_not_found"
+msgstr "Пользователь не найден."
+
+#: src/handlers/start_menu.py
+msgid "no_user_argument"
+msgstr "Отправьте имя пользователя в качестве аргумента."
+
+#: src/handlers/start_menu.py
+msgid "your_subscriptions"
+msgstr "Ваши подписки:"
+
+#: src/handlers/start_menu.py
+msgid "no_subscriptions"
+msgstr "У вас нет подписок."
+
+#: src/handlers/start_menu.py
+msgid "no_currency_argument"
+msgstr "Отправьте валюту или пару валют в качестве аргумента."
+
+#: src/handlers/start_menu.py
+msgid "subscription_added"
+msgstr "Подписка добавлена."
+
+#: src/handlers/start_menu.py
+msgid "subscription_exists"
+msgstr "Подписка уже существует."
+
+#: src/handlers/start_menu.py
+msgid "subscription_deleted"
+msgstr "Подписка удалена."
+
+#: src/handlers/start_menu.py
+msgid "subscription_delete_error"
+msgstr "Не удалось удалить подписку."
+
+#: src/handlers/support.py
+msgid "request_cancelled"
+msgstr "Ваш запрос отменён."
+
+#: src/handlers/support.py
+msgid "support_response_promise"
+msgstr "Ваше сообщение переслано. Мы ответим вам в течение 24 часов."
+
+#: src/handlers/support.py
+msgid "reply_error_bot_blocked"
+msgstr "Не удалось отправить ответ, я заблокирован у пользователя."
+
+#: src/handlers/support.py
+msgid "reply_sent"
+msgstr "Ответ отправлен."
+
+#: src/handlers/support.py
+msgid "escrow_enabled"
+msgstr "Эскроу включен."
+
+#: src/handlers/support.py
+msgid "escrow_disabled"
+msgstr "Эскроу выключен."
+
+#: src/money.py
+msgid "send_decimal_number"
+msgstr "Отправьте десятичное число."
+
+#: src/money.py
+msgid "send_positive_number"
+msgstr "Отправьте положительное число."
+
+#: src/money.py
+msgid "exceeded_money_limit {limit}"
+msgstr "Отправьте число меньшее, чем {limit}"
+
+#: src/money.py
+msgid "shortage_money_limit {limit}"
+msgstr "Отправьте число большее, чем {limit}"
+
+#: src/notifications.py
+msgid "order_expired"
+msgstr "Срок действия вашего заказа истёк."
+
+#: src/whitelist.py
+msgid "without_gateway"
+msgstr "Без шлюза"
